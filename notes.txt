@@ -1,0 +1,22 @@
+1. Create a new sum.js inside an empty directory called testing. 
+2. Open in VS code
+3. Open the terminal in the terminal run `npm init -y.` This should create a package json.
+4. Then change your package json so that the test section reads like this:
+		"scripts": {
+		    "test": "jest"
+		  },
+5. Then in the terminal run : 
+    npm install --save-dev jest
+    Followed by....
+    npm install --save-dev babel-jest @babel/core @babel/preset-env
+6. Inside your directory create a file called `babel.config.js.` Inside it, add:
+		module.exports = {
+	   presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+		 };
+7. Create a `sum.js` and `sum.test.js`file
+8. Create a `.gitignore` in it write `node_modules` so that git will ignore the node modules.
+9. To run the tests in the terminal run `npm run test`. In the console you should see "Test suite failed to run, your test suite must contain at least one test."
+
+https://jestjs.io/docs/getting-started
+
+clear | npm run test  
