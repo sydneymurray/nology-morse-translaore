@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/translator.js"></script>
+    <link rel="stylesheet" href="./scss/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Syd Translaor</h1>
+    <form onSubmit="writeMorse(event)">
+        <h2>Translate English to Morse Code</h2>
+        <input type="submit" value="Translate">
+        <input type="text" name="english">
+    </form>
+    <form onSubmit="readMorse(event)">
+        <h2>Translate Morse Code to English</h2>
+        <input type="submit" value="Translate">
+        <input type="text" name="morse">
+    </form>
+    <h2>Translation</h2>
+    <p class="translation">lkjhldskf adsokhj lkd pij iasd  ojdpoaj </p>
+</body>
+</html>
